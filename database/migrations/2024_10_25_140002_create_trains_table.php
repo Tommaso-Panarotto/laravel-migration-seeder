@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string("station_departure", 255);
             $table->string("station_arrive", 255);
             $table->time("hour_departure");
-            $table->time("hour-arrive");
+            $table->time("hour_arrive");
+            $table->date("date");
             $table->char("train_cd", 12)->unique();
             $table->smallInteger("carriages")->unsigned();
             $table->boolean("on_time")->default(true);
@@ -26,7 +27,7 @@ return new class extends Migration
         });
     }
 
-    /**
+    /**r
      * Reverse the migrations.
      */
     public function down(): void

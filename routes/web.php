@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TrainsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::get('/trains', [TrainsController::class,"index"]);
+

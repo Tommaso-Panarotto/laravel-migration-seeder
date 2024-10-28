@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PassengerController;
 use App\Http\Controllers\TrainsController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/trains', [TrainsController::class,"index"]);
+Route::get('/passengers', [PassengerController::class,"index"]);
 

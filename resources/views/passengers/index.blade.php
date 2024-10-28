@@ -10,6 +10,7 @@
 <div class="col-4">
     <div class="card" >
       <h4>{{$passenger->name}} {{$passenger->surname}}</h4>
+      <div><span>email:</span>  {{$passenger->email}}</div>
     </div>
   </div>
 
